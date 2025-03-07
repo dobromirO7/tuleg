@@ -1,0 +1,31 @@
+jQuery(function($){
+	
+
+	
+	/* fancybox init */
+	$('a.fancybox').fancybox({
+		'transitionIn' : 'elastic',
+		'transitionOut' : 'elastic'
+	});
+
+	$('#bxslider ul').each(function(){
+		var sliderWidth = $(this).parent().width();
+		var slideWidth = $(this).children(':first').outerWidth();
+		var slideMargin = parseInt($(this).children(':first').css('margin-right'), 10);
+		var slideCount = $(this).children().size();
+		if(!slideCount || sliderWidth >= slideWidth * slideCount + slideMargin * (slideCount - 1)) return;
+		var shovedSlideCount = Math.floor((sliderWidth + slideMargin) / (slideWidth + slideMargin));
+		$(this).bxSlider({
+			minSlides:shovedSlideCount,
+			maxSlides:shovedSlideCount,
+			slideWidth:slideWidth,
+			slideMargin:slideMargin,
+			pager:false,
+			infiniteLoop:false,
+			hideControlOnEnd:true
+		});
+	});
+	
+	
+	
+});
