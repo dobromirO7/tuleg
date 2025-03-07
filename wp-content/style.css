@@ -1,0 +1,424 @@
+/*   
+Theme Name: Tulegenova Natalya
+Theme URI: http://tulegenova.com/
+Description: «Наталья Тулегенова» - Дизайн
+Author: el-lable
+Author URI: http://el-lable.com
+Version: 1.0
+*/
+
+* {
+	margin:0;
+	padding:0;
+	outline:none;
+	font:14px Arial, Tahoma, Helvetica, Verdana sans-serif; 
+}
+header,
+footer,
+nav,
+section,
+aside,
+article,
+figcaption{
+	display:block;
+}
+html, body{
+	height:100%;
+}
+body{
+	background:#fff;
+}
+img{
+	border:none;
+}
+input::-moz-focus-inner{
+	padding:0;
+	margin:0;
+	border:none;
+}
+
+/* main grid */
+#main{
+	position:relative;
+	min-height:100%;
+	min-width:720px;
+	/*max-width:1300px;*/
+}
+#main:before{
+	content:"";
+	position:fixed;
+	left:0;
+	top:0;
+	width:278px;
+	height:100%;
+	background:#efefef;
+	z-index:-1;
+}
+
+/* left aside */
+#left_aside{
+	float:left;
+	width:278px;
+}
+#left_aside .logo{
+	display:block;
+	height:281px;
+	margin:0 0 0 30px;
+	text-decoration:none;
+	text-indent:-9999px;
+	background:url('images/logo.png') 30px 0 no-repeat #e4e4e4;
+}
+#left_aside .widget{
+	margin:14px 18px 14px 30px;
+	text-align:right;
+}
+#left_aside .widget_nav_menu{
+	
+}
+#left_aside .widget_nav_menu ul,
+#left_aside .widget_nav_menu li{
+	display:block;
+	list-style:none;
+}
+#left_aside .widget_nav_menu li{
+	margin:24px 0;
+	font-size:20px;
+	line-height:24px;
+	color:#000;
+}
+#left_aside .widget_tag_cloud{
+	
+}
+#left_aside .widget_tag_cloud h2{
+	font-size:36px;
+	color:#ff1e1e;
+}
+#left_aside .widget_tag_cloud .tagcloud{
+	overflow:hidden;
+}
+#left_aside .widget_tag_cloud .tagcloud a{
+	float:right;
+	clear:right;
+	margin:0 0 4px;
+	text-decoration:none;
+	font-size:20px !important;
+	color:#979696
+}
+
+/* content */
+#content{
+	overflow:hidden;
+	margin:0 0 0 306px;
+}
+#content .post{
+	margin:68px 0 0;
+}
+#content .post h1 a,
+#content .post h2 a{
+	text-decoration:none;
+}
+#content .post .entry{
+	overflow:hidden;
+}
+#content .post .tags{
+	font-size:14px;
+	color:#949393;
+}
+#content .post .socials{
+	margin:16px 0;
+}
+/* main page previews thumbnail block */
+#content #all_previews{
+	margin:68px 0 0;
+}
+#all_previews{
+	overflow:hidden;
+}
+#all_previews ul,
+#all_previews li{
+	display:block;
+	list-style:none;
+}
+#all_previews ul{
+	width:102%;
+}
+#all_previews ul li{
+	float:left;
+	margin:25px 25px 0 0;
+}
+
+/* bxSlider */
+#content #bxslider{
+	margin:12px 0;
+}
+#bxslider{
+	
+}
+#bxslider ul,
+#bxslider li{
+	display:block;
+	list-style:none;
+}
+#bxslider ul li{
+	width:120px;
+	margin:0 22px 0 0;
+}
+#bxslider ul li a{
+	display:block;
+}
+#bxslider .bx-wrapper{
+	position:relative;
+	margin:0 28px !important;
+	padding:0;
+}
+#bxslider .bx-wrapper img{
+	display:block;
+	border:none;
+	max-width:120px;
+	max-height:120px;
+}
+#bxslider .bx-wrapper .bx-prev,
+#bxslider .bx-wrapper .bx-next{
+	position:absolute;
+	top:50%;
+	width:16px;
+	height:16px;
+	margin-top:-8px;
+	text-indent:-9999px;
+	background:#4c4c4c;
+	border-radius:50%;
+}
+#bxslider .bx-wrapper .bx-prev.disabled,
+#bxslider .bx-wrapper .bx-next.disabled{
+	display:none;
+}
+#bxslider .bx-wrapper .bx-prev{
+	left:-28px;
+}
+#bxslider .bx-wrapper .bx-next{
+	right:-28px;
+}
+#bxslider .bx-wrapper .bx-prev:before,
+#bxslider .bx-wrapper .bx-next:before{
+	content:"";
+	position:absolute;
+	top:3.5px;
+	width:0;
+	height:0;
+	border-top:4.5px solid transparent;
+	border-bottom:4.5px solid transparent;
+}
+#bxslider .bx-wrapper .bx-prev:before{
+	left:3px;
+	border-right:7px solid #fff;
+}
+#bxslider .bx-wrapper .bx-next:before{
+	right:3px;
+	border-left:7px solid #fff;
+}
+
+
+
+/* footer */
+#footer{
+	overflow:hidden;
+	width:960px;
+	height:100px;
+	margin:0 auto;
+	padding:24px 0 0;
+}
+
+
+/* text elements */
+h1{
+	color:#000;
+	font-size:30px;
+	margin:14px 0;
+}
+h2{
+	color:#000;
+	font-size:30px;
+	margin:14px 0;
+}
+h3{
+	color:#000;
+	font-size:24px;
+	margin:14px 0;
+}
+h4{
+	margin:14px 0;
+	color:#000;
+	font-size:1.0em;
+	line-height:14px;
+}
+h5{
+	margin:14px 0;
+	color:#000;
+	font-size:1.0em;
+}
+h6{
+	margin:14px 0;
+	color:#000;
+	font-size:1.0em;
+}
+p{
+	color:#949393;
+	font-size:1.0em;
+	margin:14px 0;
+}
+strong{
+	color:inherit;
+	font-size:inherit;
+	line-height:inherit;
+	font-weight:bold;
+}
+b{
+	color:inherit;
+	font-size:inherit;
+	line-height:inherit;
+	font-weight:bold;
+}
+em{
+	color:inherit;
+	font-size:inherit;
+	line-height:inherit;
+	border-bottom:1px dashed  #000;
+}
+i{
+	color:inherit;
+	font-size:inherit;
+	line-height:inherit;
+	font-style:italic;
+}
+span{
+	color:inherit;
+	font-size:inherit;
+	line-height:inherit;
+	font-family:inherit;
+	font-weight:inherit;
+}
+a{
+	font-size:inherit;
+	line-height:inherit;
+	color:inherit;
+	font-weight:inherit;
+}
+a:hover{
+	text-decoration:none;
+}
+li{
+	color:#000;
+	font-size:1.0em;
+	line-height:18px;
+}
+.pstrong{
+	color:#000;
+	font-size:1.0em;
+	margin:14px 0;
+	line-height:18px;
+	font-weight:bold;
+} 
+.pcursiv{
+	color:#000;
+	font-size:1.0em;
+	margin:14px 0;
+	line-height:18px;
+	font-style:italic;
+} 
+.pstrongcursiv{
+	color:#000;
+	font-size:1.0em;
+	margin:14px 0;
+	line-height:18px;
+	font-weight:bold;
+	font-style:italic;
+}
+.fleft{
+	float:left;
+}
+.fright{
+	float:right;
+}
+#content > ul,
+#content > ol,
+#content .entry ul,
+#content .entry ol{
+	display:block;
+	padding:0 0 0 16px;
+}
+.post-edit-link{
+	color:red;
+}
+
+.relevanssi-query-term{
+	color:#fff;
+	background:#5a8665;
+	
+}
+
+
+/* standart WP styles */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+.aligncenter, div.aligncenter {
+    margin: auto;
+}
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+.alignleft {
+    float:left;
+    margin: 5px 20px 20px 0;
+}
+.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+a img.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+a img.alignleft {
+    float:left;
+    margin: 5px 20px 20px 0;
+}
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin:0;
+    max-width: 98.5%;
+    padding:0;
+    width: auto;
+}
+.wp-caption p.wp-caption-text {
+    font-size:11px;
+    line-height:17px;
+    margin:0;
+    padding:0 4px 5px;
+}
